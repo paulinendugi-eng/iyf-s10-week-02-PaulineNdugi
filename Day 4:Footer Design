@@ -1,1 +1,123 @@
+#{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container{
+  min-height: 100vh;
+  display: flex;
+  align-items: centre;
+  justify-content: centre;
+  padding: 20px;
+  background: linear-gradient(135deg,#667eea, #764ba2);
+}
+
+.contact-form{
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.contact-form h2{
+  margin-bottom: 20px;
+  text-align: centre;
+}
+
+.form-group{
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label{
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea{
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus{
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+input:invalid, textarea:invalid,
+select:invalid{
+    border-color: red;
+}
+
+input:valid, textarea:valid,
+select:valid{
+    border-color: green;
+}
+
+textarea{
+  resize: none;
+  min-height: 120px;
+}
+
+.checkbox{
+  flex-direction: row;
+  align-items: centre;
+}
+
+.checkbox input{
+  margin-right: 10px;
+}
+
+button{
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  background: #5a67d8;
+  transform: translateY(-2px);
+}
+
+button:active{
+  transform: scale(0.98);
+}
+
+@media (max-width: 600px){
+    .contact-form{
+        padding: 20px;
+    }
+
+    input, select, textarea{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
